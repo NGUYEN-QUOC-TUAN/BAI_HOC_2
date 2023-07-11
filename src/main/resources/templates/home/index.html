@@ -1,17 +1,12 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+        th:replace="~{/layout/layout.html :: dynamic(~{::body})}">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HOME INDEX</title>
 </head>
 <body>
-    <img th:src="@{/images/123.jpg}">
-    <nav th:replace="~{/layout/menu.html}"></nav>
-    <h1 th:text="${message}"></h1>
-    <ul th:object="${sinhvien}">
-        <li th:text="${sinhvien.name}"></li>
-        <li th:text="*{marks}"></li>
-        <li th:text="*{contact.getEmail()}"></li>
-    </ul>
+<h3>TRANG CHỦ</h3>
+<i>ĐÂY LÀ TRANG CHỦ</i>
 </body>
 </html>

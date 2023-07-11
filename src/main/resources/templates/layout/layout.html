@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="dynamic(view)">
+<head>
+    <meta charset="UTF-8">
+    <title>TỔ CHỨC LAYOUT</title>
+</head>
+<body>
+<header>
+    <h3 style="text-align: center">HOÀNG TUẤN</h3>
+</header>
+<section>
+    <hr>
+    <nav th:insert="~{layout/menu.html :: navbar}"></nav>
+    <br>
+    <hr>
+    <main th:replace="${view}"></main>
+</section>
+<footer>
+    <br>
+    <div class="phanCuoi" style="text-align: center">
+        FPT Polytechnic &copy; 2021. All rights reserved.
+    </div>
+</footer>
+</body>
+</html>

@@ -2,9 +2,17 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>THYMLEAF</title>
 </head>
 <body>
-
+<h1>WELCOME TO THYMLEAF</h1>
+<ul>
+    <li th:text="${message}"></li>
+    <li th:utext="${message}"></li>
+</ul>
+<ul>
+    <li>[[${message}]]</li>
+    <li>[(${message})]</li>
+</ul>
 </body>
 </html>
